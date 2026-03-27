@@ -23,7 +23,7 @@ export const PROJECTS: Project[] = [
     title: 'SCAI',
     date: 'Currently Working',
     subtext: 'An advanced AI-powered web automation platform that combines browser automation with LLM-based task planning. Execute tasks across any website using a Chrome extension and natural language. (Next.js 14, FastAPI, AWS Bedrock, Chrome Extension)',
-    urls: [{ text: 'GitHub', url: 'https://github.com/Cmk31311/SCAI' }, { text: 'Live', url: 'https://scai-eta.vercel.app' }],
+    urls: [{ text: 'GitHub', url: 'https://github.com/Cmk31311/SCAI' }, { text: 'Live', url: 'https://sc-ai.app/' }],
     highlightColor: '#FFD700', // Gold
   },
   {
@@ -37,19 +37,19 @@ export const PROJECTS: Project[] = [
     title: 'AI Baseline Map',
     date: '2024',
     subtext: 'A comprehensive monorepo built for the Baseline Tooling Hackathon by Google Chrome. It includes multiple tools for visualizing, analyzing, and working with Baseline web features. (Next.js 15, TypeScript, Tailwind, Groq SDK)',
-    urls: [{ text: 'GitHub', url: 'https://github.com/Cmk31311/AI-Baseline-Map' }, { text: 'Live', url: 'https://ai-baseline.vercel.app' }],
+    urls: [{ text: 'GitHub', url: 'https://github.com/Cmk31311/AI_Baseline_Map' }, { text: 'Live', url: 'https://ai-baseline-map.vercel.app' }],
   },
   {
     title: 'AI Personal Motivator',
     date: '2024',
     subtext: 'A powerful, AI-driven application that provides personalized inspiration, curated quotes, and actionable guidance. Features multiple Gemini models, TTS audio, and advanced configuration. (LLMs, TTS, Web Audio)',
-    urls: [{ text: 'GitHub', url: 'https://github.com/Cmk31311/AI-Personal-Motivator' }, { text: 'Live', url: '#' }],
+    urls: [{ text: 'GitHub', url: 'https://github.com/Cmk31311/AI-personal-motivator-and-quote-generator' }, { text: 'Live', url: '#' }],
   },
   {
     title: 'AI Flashcard Maker',
     date: '2024',
     subtext: 'Turn study materials (PDF/DOCX/TXT) into exam-ready Q&A flashcards with Google Gemini. Features a built-in multiple-choice quiz mode and an interactive glassmorphic UI. (Python, Streamlit, Gemini API)',
-    urls: [{ text: 'GitHub', url: 'https://github.com/Cmk31311/AI_Flashcard_Maker' }, { text: 'Live', url: '#' }],
+    urls: [{ text: 'GitHub', url: 'https://github.com/Cmk31311/AI-FlashCard-Maker' }, { text: 'Live', url: '#' }],
   },
   /*
   {
