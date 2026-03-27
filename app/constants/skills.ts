@@ -4,7 +4,7 @@ export const SKILLS: Project[] = [
   {
     title: 'Languages',
     date: 'Skill',
-    subtext: 'Python, TypeScript, Go, JavaScript, SQL, Bash',
+    subtext: 'Python, TypeScript, Go, JavaScript, SQL, Bash, C++',
     highlightColor: '#bdd1e3'
   },
   {
@@ -20,21 +20,15 @@ export const SKILLS: Project[] = [
     highlightColor: '#bdd1e3'
   },
   {
-    title: 'Cloud & DevOps',
+    title: 'Cloud & Infra',
     date: 'Skill',
-    subtext: 'AWS (EC2, Lambda, S3, DynamoDB, IAM, CloudWatch), Docker, Jenkins, CI/CD, Vercel, GitHub Actions, Git, Nginx, Linux, Kubernetes, Terraform',
-    highlightColor: '#bdd1e3'
-  },
-  {
-    title: 'SRE & Reliability',
-    date: 'Skill',
-    subtext: 'Availability, performance monitoring, incident response, debugging, root cause analysis, automation',
+    subtext: 'AWS (EC2, Lambda, S3, DynamoDB, IAM, CloudWatch), Google Cloud, Docker, Jenkins, CI/CD, Vercel, GitHub Actions, Git, Nginx, Linux, Kubernetes, Terraform',
     highlightColor: '#bdd1e3'
   },
   {
     title: 'GenAI & LLMs',
     date: 'Skill',
-    subtext: 'LLM apps (automation, QA, code analysis), RAG, semantic search, embeddings/vector DBs, orchestration',
+    subtext: 'LLM apps (automation, QA), RAG, semantic search, embeddings/vector DBs, orchestration, PyTorch',
     highlightColor: '#bdd1e3'
   }
 ];
