@@ -14,10 +14,10 @@ const vercettiFont = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://khadarchittor.vercel.app"),
+  metadataBase: new URL("https://www.khadar.tech"),
   title: "Khadar Chittor ✌️",
-  description: "I write code the way I make coffee - strong, slightly chaotic, but it gets the job done. I thrive on turning ideas into interactive, scalable solutions.",
-  keywords: "Khadar Chittor, Software Engineer, Python, GenAI, Cloud, React, TypeScript, Next.js",
+  description: "Software engineer building agentic AI systems, RAG platforms, and production backend services with Python, FastAPI, Next.js, and AWS.",
+  keywords: "Khadar Chittor, Software Engineer, Python, FastAPI, Django, GenAI, Agentic AI, RAG, AWS, React, TypeScript, Next.js",
   authors: [{ name: "Khadar Chittor" }],
   creator: "Khadar Chittor",
   publisher: "Khadar Chittor",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Khadar Chittor - Software Engineer",
     description: "Crafting digital experiences with precision, passion, and elegance.",
-    url: "https://khadarchittor.dev",
+    url: "https://www.khadar.tech",
     siteName: "Khadar Chittor's Portfolio",
     locale: "en_US",
     type: "website",

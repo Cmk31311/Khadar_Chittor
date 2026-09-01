@@ -4,7 +4,7 @@ import { WorkTimelinePoint } from "../types";
 export const WORK_TIMELINE: WorkTimelinePoint[] = [
   {
     point: new THREE.Vector3(0, 0, 0),
-    year: '2022 - 2024',
+    year: 'Oct 2022 - Dec 2024',
     title: 'HCLTech',
     subtitle: 'Software Engineer\nDeveloped core modules and streamlined workflows\nfor one of Australia\'s largest banks.',
     position: 'right',
@@ -19,14 +19,14 @@ export const WORK_TIMELINE: WorkTimelinePoint[] = [
   {
     point: new THREE.Vector3(-3, -1, -6),
     year: 'June 2024 - Aug 2025',
-    title: '\nIT Student Assistant',
+    title: '\nGraduate Student Associate Developer',
     subtitle: '\n\n\n\nI write code the way I make coffee - strong,\nslightly chaotic, but it gets the job done.\nI thrive on turning ideas into interactive,\nscalable solutions.',
     position: 'right',
   },
   {
     point: new THREE.Vector3(0, -1, -10),
-    year: 'Aug 2025 - Present',
-    title: '\nIT Student Lead',
+    year: 'Aug 2025 - May 2026',
+    title: '\nGraduate Student Lead Developer',
     subtitle: '\n\n\nASC-CSUF\nAnalyzing massive support data, mentoring student assistants,\nand piloting AI solutions.',
     position: 'right',
   }

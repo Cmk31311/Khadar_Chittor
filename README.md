@@ -1,7 +1,7 @@
 # Khadar Chittor's Portfolio
-Hello there! I'm Khadar Chittor, software engineer by profession, a creative at heart.
+Hello there! I'm Khadar Chittor, a software engineer based in SF, CA building agentic AI systems, RAG platforms, and production backend services.
 
-This the updated version of my personal website which is now in 3D. LFG!
+This is the updated version of my personal website which is now in 3D. LFG!
 
 ## Tech Stack
 

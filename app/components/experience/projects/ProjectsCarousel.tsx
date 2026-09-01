@@ -19,12 +19,13 @@ const ProjectsCarousel = () => {
   };
 
   const tiles = useMemo(() => {
-    const fov = Math.PI;
-    const distance = 14;
     const count = PROJECTS.length;
+    const tileAngle = 0.37;
+    const fov = tileAngle * Math.max(count - 1, 1);
+    const distance = 14.6;
 
     return PROJECTS.map((project, i) => {
-      const angle = (fov / count) * i;
+      const angle = (fov / Math.max(count - 1, 1)) * i;
       const z = -distance * Math.sin(angle);
       const x = -distance * Math.cos(angle);
       const rotY = Math.PI / 2 - angle;

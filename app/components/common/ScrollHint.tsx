@@ -4,29 +4,36 @@ import { useEffect, useState } from "react";
 
 import { usePortalStore, useScrollStore } from "@stores";
 
+const SCROLL_TOP_THRESHOLD = 0.02;
+const EXPERIENCE_GRID_START = 0.78;
+const EXPERIENCE_GRID_END = 0.95;
+
 export const ScrollHint = () => {
   const [hintText, setHintText] = useState('');
   const [showScrollHint, setShowScrollHint] = useState(false);
   const portal = usePortalStore((state) => state.activePortalId);
   const scrollProgress = useScrollStore((state) => state.scrollProgress);
 
-  // Show 'Scroll' for Hero and work portals, 'Pan' for Projects portal.
   useEffect(() => {
     if (!portal) {
-      if (scrollProgress === 0) {
+      if (scrollProgress < SCROLL_TOP_THRESHOLD) {
         setHintText('SCROLL');
+        setShowScrollHint(true);
+      } else if (
+        scrollProgress >= EXPERIENCE_GRID_START &&
+        scrollProgress < EXPERIENCE_GRID_END
+      ) {
+        setHintText('PAN');
         setShowScrollHint(true);
       } else {
         setShowScrollHint(false);
       }
+    } else if (portal === 'work') {
+      setHintText('SCROLL');
+      setShowScrollHint(scrollProgress < SCROLL_TOP_THRESHOLD);
     } else {
-      if (portal === 'work') {
-        setHintText('SCROLL');
-        setShowScrollHint(scrollProgress === 0);
-      } else {
-        setHintText('PAN');
-        setShowScrollHint(true);
-      }
+      setHintText('PAN');
+      setShowScrollHint(true);
     }
   }, [portal, scrollProgress]);
 
@@ -50,11 +57,12 @@ export const ScrollHint = () => {
 
   return (
     <div className="fixed w-full bottom-5 scroll-hint" style={{ opacity: 0 }}>
-      <div className="flex items-center justify-center animate-pulse">
-        { showScrollHint }
-        <Image src={svgSrc} width={18} height={18} alt="night mode" loading="lazy" />
-        <span className="text-white">{hintText}</span>
-      </div>
+      {showScrollHint && (
+        <div className="flex items-center justify-center gap-1 animate-pulse">
+          <Image src={svgSrc} width={18} height={18} alt="" loading="lazy" />
+          <span className="text-white">{hintText}</span>
+        </div>
+      )}
     </div>
   );
 }

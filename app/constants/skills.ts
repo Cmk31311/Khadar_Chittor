@@ -4,31 +4,31 @@ export const SKILLS: Project[] = [
   {
     title: 'Languages',
     date: 'Skill',
-    subtext: 'Python, TypeScript, Go, JavaScript, SQL, Bash, C++',
+    subtext: 'Python, TypeScript, JavaScript, C++, SQL, Bash',
     highlightColor: '#bdd1e3'
   },
   {
-    title: 'Backend & Web',
+    title: 'Full Stack & Testing',
     date: 'Skill',
-    subtext: 'Django, FastAPI, Flask, REST APIs, gRPC, Async Python, WebSockets, Next.js, React, microservices, cloud-native services, distributed systems, Pytest, automated testing',
+    subtext: 'FastAPI, Django, Node.js, React, Next.js, REST APIs, gRPC, asyncio, WebSockets, OpenAPI, OAuth 2.0, JWT, pytest, Playwright, Unit & Integration Testing, Flask, Tailwind CSS, Vite, HTML5, CSS3',
     highlightColor: '#bdd1e3'
   },
   {
-    title: 'Databases',
+    title: 'Data & Databases',
     date: 'Skill',
-    subtext: 'PostgreSQL, MongoDB, Supabase, Firebase',
+    subtext: 'PostgreSQL, MySQL, NoSQL (MongoDB, DynamoDB), Redis, Elasticsearch, Supabase, ETL/ELT',
     highlightColor: '#bdd1e3'
   },
   {
     title: 'Cloud & Infra',
     date: 'Skill',
-    subtext: 'AWS (EC2, Lambda, S3, DynamoDB, IAM, CloudWatch), Google Cloud, Docker, Jenkins, CI/CD, Vercel, GitHub Actions, Git, Nginx, Linux, Kubernetes, Terraform',
+    subtext: 'AWS (EC2, Lambda, S3, CloudWatch, IAM, ECS, EKS, RDS, VPC), Docker, Kubernetes, CI/CD, GitHub Actions, Nginx, Linux, Git',
     highlightColor: '#bdd1e3'
   },
   {
-    title: 'GenAI & LLMs',
+    title: 'AI/LLM',
     date: 'Skill',
-    subtext: 'LLM apps (automation, QA), RAG, semantic search, embeddings/vector DBs, orchestration, PyTorch',
+    subtext: 'Agentic AI Systems, RAG, MCP, Generative AI, Semantic Search, Embeddings, Vector Databases (Pinecone), NLP, PyTorch, LangChain, LlamaIndex, Hugging Face Transformers, Amazon Bedrock, SageMaker, MLOps, LLM APIs, Prompt Engineering',
     highlightColor: '#bdd1e3'
   }
 ];
