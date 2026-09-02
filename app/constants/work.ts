@@ -6,7 +6,7 @@ export const WORK_TIMELINE: WorkTimelinePoint[] = [
     point: new THREE.Vector3(0, 0, 0),
     year: 'Oct 2022 - Dec 2024',
     title: 'HCLTech',
-    subtitle: 'Software Engineer\nDeveloped core modules and streamlined workflows\nfor one of Australia\'s largest banks.',
+    subtitle: 'Software Engineer\n- Developed core modules and streamlined \nworkflows for one of the Australia\'s largest banks.',
     position: 'right',
   },
   {
@@ -19,15 +19,15 @@ export const WORK_TIMELINE: WorkTimelinePoint[] = [
   {
     point: new THREE.Vector3(-3, -1, -6),
     year: 'June 2024 - Aug 2025',
-    title: '\nGraduate Student Associate Developer',
-    subtitle: '\n\n\n\nI write code the way I make coffee - strong,\nslightly chaotic, but it gets the job done.\nI thrive on turning ideas into interactive,\nscalable solutions.',
+    title: '\n\nGraduate Student Associate Developer',
+    subtitle: '\n\n\n\n\n\n\n\n\n\n\nCal State Fullerton\n- I write code the way I make coffee - strong,\nslightly chaotic, but it gets the job done.\n- I thrive on turning ideas into interactive,\nscalable solutions.',
     position: 'right',
   },
   {
     point: new THREE.Vector3(0, -1, -10),
     year: 'Aug 2025 - May 2026',
     title: '\nGraduate Student Lead Developer',
-    subtitle: '\n\n\nASC-CSUF\nAnalyzing massive support data, mentoring student assistants,\nand piloting AI solutions.',
+    subtitle: '\n\n\n\n\n\nCal State Fullerton\n- Analyzed massive support data \n- mentored student assistants,\n- piloted AI solutions.',
     position: 'right',
   }
 ]
