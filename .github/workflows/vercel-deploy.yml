@@ -1,0 +1,21 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Vercel production deploy
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$VERCEL_DEPLOY_HOOK" ]; then
+            echo "VERCEL_DEPLOY_HOOK secret is not set. Skipping Vercel deploy."
+            echo "Create a Deploy Hook in Vercel → Project Settings → Deploy Hooks, then add it as a GitHub secret."
+            exit 0
+          fi
+          curl --fail-with-body -X POST "$VERCEL_DEPLOY_HOOK"
